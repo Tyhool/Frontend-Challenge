@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Age calculator app</title>  
+
+  <!--fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+
+  <!--styles-->
+  <link rel="stylesheet" href="./assets/styles/index.css" type="text/css">
+
+  <!--scripts-->
+  <script type="text/javascript" src="./assets/scripts/index.js" defer></script>
+</head>
+<body>
+
+  <section class="container">
+    <form class="form-date" id="form-date">
+      <div class="form-groups">
+        <div class="form-group">
+          <label for="dia">Dia</label>
+          <input type="number" placeholder="DD" id="dia" class="date-value">
+          <span class="error-message">Deve ser um dia válido</span>
+        </div>
+        <div class="form-group">
+          <label for="mes">Mês</label>
+          <input type="number" placeholder="MM" id="mes" class="date-value">
+          <span class="error-message">Deve ser um mês válido</span>
+        </div>
+        <div class="form-group">
+          <label for="ano">Ano</label>
+          <input type="number" placeholder="YYYY" id="ano" class="date-value">
+          <span class="error-message">Deve estar no passado</span>
+        </div>
+      </div>
+      <div class="submit">
+        <hr class="line"/>
+        <button type="submit" id="btn-submit">
+          <img class="img-submit" src="./assets/images/icon-arrow.svg" alt="submit">
+        </button>
+      </div>
+    </form>
+
+    <div class="display" id="display">
+      <div class="time" id="display-year">
+        <span class="dash">--</span>Anos
+      </div>
+      <div class="time" id="display-month">
+        <span class="dash">--</span>Meses
+      </div>
+      <div class="time" id="display-day">
+        <span class="dash">--</span>Dias
+      </div>
+    </div>
+  </section>
+ 
+  <div class="attribution">
+    <span>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a></span>
+    <span>Coded by <a href="#" target="_blank">Thyago</a></span>
+  </div>
+</body>
+</html>
